@@ -17,8 +17,8 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path
 
-from Pedidos.views import home
+from Login.views import home
 
 urlpatterns = [
-    path('pedidos/', home),
+    path('', home),
 ]
