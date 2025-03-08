@@ -17,8 +17,9 @@ Including another URLconf
 # from django.contrib import admin
 from django.urls import path
 
-from Pedidos.views import home
+from . import views
 
 urlpatterns = [
-    path('pedidos/', home),
+    path('pedidos/', views.home),
+    path('pedidos/<int:number>', views.pedido, name='ver_pedido'),
 ]

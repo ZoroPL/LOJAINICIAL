@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos Pendentes</title>
+    <title>Pedido </title>
     
     {% load static %}
     
@@ -17,13 +17,12 @@
 
     <div class="container py-5">
         <header class="text-center mb-5">
-            <h1 class="display-4 text-primary">Pedidos Pendentes</h1>
-            <p class="lead text-muted">Confira os pedidos pendentes abaixo.</p>
+            <h1 class="display-4 text-primary">Pedido {{pedido.id}}</h1>
+            <p class="lead text-muted">Confira o pedido abaixo.</p>
         </header>
 
         <section class="row">
             <!-- Cada pedido será exibido como um "bloco" (cartão) -->
-            {% for pedido in pedidos %}
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm">
                         <div class="card-body">
@@ -37,15 +36,11 @@
                                 {% endfor %}
                             </ul>
 
+                            <p class="card-text"><strong>Total:</strong> {{ total }}</p>
                             
                         </div>
                     </div>
                 </div>
-            {% empty %}
-                <div class="col-12">
-                    <p class="text-center text-muted">Nenhum pedido pendente.</p>
-                </div>
-            {% endfor %}
         </section>
     </div>
 

@@ -1,0 +1,54 @@
+/* Estilo do corpo da página */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para o cabeçalho */
+header h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #0066cc; /* Cor de destaque */
+}
+
+/* Estilo para a descrição do cabeçalho */
+header p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Estilo da tabela */
+.table {
+    margin-top: 20px;
+}
+
+/* Personalização do botão "Ver Pedido" */
+.btn-info {
+    background-color: #0066cc; /* Cor personalizada */
+    border-color: #0066cc;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #004b99; /* Cor ao passar o mouse */
+    border-color: #004b99;
+}
+
+/* Para quando não houver pedidos pendentes */
+.text-muted {
+    font-size: 1.1em;
+    color: #999;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo responsivo para dispositivos pequenos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .table {
+        font-size: 0.9em;
+    }
+}
